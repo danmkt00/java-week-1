@@ -48,11 +48,24 @@ public class LogicalE
         // -------------------- Student Exercises --------------------
         // 1. Create boolean x = true, y = false and test &&, ||, ! operators.
 
+        boolean x = true;
+        boolean y = false;
+        System.out.println(x && y);
+        System.out.println(x || y);
+        System.out.println(x && !y);
+
+
         // 2. Create a = true, b = false, c = true; evaluate:
         //    (a && b) || c and !(a || b) && c
+        boolean c = true;
+        System.out.println((a && b) || c);
+        System.out.println(!(a || b) && c);
 
         // 3. Create int n = 15; check if n > 10 && n < 20,
         //    and n != 12 || n < 5.
+        int n = 15;
+        System.out.println(n > 10 && n < 20);
+        System.out.println(n != 12 || n < 5);
 
         // 4. Combine multiple logical operators with parentheses
         //    to test order of evaluation.

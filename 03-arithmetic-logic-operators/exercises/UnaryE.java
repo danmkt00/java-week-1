@@ -47,10 +47,39 @@ public class UnaryE
         // -------------------- Student Exercises --------------------
         // 1. Create int num = 8; apply unary minus and plus.
 
+        int num = 8;
+        num = -num;
+        System.out.println(num);
+
+        num = +num;
+        System.out.println(num);
+
         // 2. Create boolean isOpen = false; invert it with !.
+
+        boolean isOpen = false;
+        System.out.println(!isOpen);
 
         // 3. Create int counter = 0; use pre-increment and post-increment.
 
-        // 4. Create int count = 5; use pre-
+        int counter = 0;
+        System.out.println(counter++); // prints 0, then counter becomes 1
+        System.out.println(++counter); // increments first (1→2), then prints 2
+
+        // 4.
+        int count = 5;
+        System.out.println(--count); // prints 0, then counter becomes 1
+        System.out.println(count--); // increments first (1→2), then prints 2
+
+        // 5.Combine unary operators with arithmetic:
+        // *    Example: int x = 10; int y = -x + ++x; print y and explain.
+        int x5 = 10;
+        int y5 = -x5 + ++x5;
+
+        // -x5 = -10;
+        // ++x5 = 11;
+        // -10 + 11 = 1;
+
+        System.out.println(y5);
+
     }
 }
